@@ -1,0 +1,1399 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+	  <meta name="description" content="onEdu Campus Management Solution" />
+  <meta name="generator" content="onEdu" />
+  <title>The ICFAI University, Tripura</title>
+  <link href="/templates/rhuk_milkyway/Yynd25lRPRXkH4JIUTRIPURA.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="/includes/js/joomla.javascript.js"></script>
+  <script type="text/javascript">
+ var tabber_slide_speed = 500; var tabber_fade_in_speed = 500; var tabber_scroll = 0; 
+ var slider_speed = 500; var slider_fade_in_speed = 1000; var slider_fade_out_speed = 400; var slider_scroll = 2; 
+  </script>
+
+
+	<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/template.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/rounded.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/login.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/sprinkle.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/uitable.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/css/calendar1.css" type="text/css" />
+	<link
+		rel="stylesheet"
+		href="/templates/rhuk_milkyway/css/white.css"
+		type="text/css"
+	/>
+	<link
+		rel="stylesheet"
+		href="/templates/rhuk_milkyway/css/green_bg.css"
+		type="text/css"
+	/>
+	<link href='https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
+
+	<!--[if lte IE 6]>
+	<link href="/templates/rhuk_milkyway/css/ieonly.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/rhuk_milkyway/css/demo.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+	<!-- Javascript JQuery code starts -->
+	<!--script type="text/javascript" src="/includes/js/mootools-core-1.4.1-full-compat.js"></script-->
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/tablesort.js"></script>
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/jquerylib.min.js"></script>
+	<link
+		rel="stylesheet"
+		href="/templates/rhuk_milkyway/js/JQuery form validation/css/validationEngine.jquery.css"
+		type="text/css"
+	/>
+	<link
+		rel="stylesheet"
+		href="/templates/rhuk_milkyway/js/JQuery form validation/css/template.css"
+		type="text/css"
+	/>
+	<script src="/templates/rhuk_milkyway/js/JQuery form validation/js/jquery-1.6.min.js" type="text/javascript"></script>
+	<script
+		src="/templates/rhuk_milkyway/js/JQuery form validation/js/languages/jquery.validationEngine-en.js"
+		type="text/javascript"
+		charset="utf-8"
+	></script>
+	<script
+		src="/templates/rhuk_milkyway/js/JQuery form validation/js/jquery.validationEngine.js"
+		type="text/javascript"
+		charset="utf-8"
+	></script>
+	<!-- Javascript JQuery code ends -->
+
+	<!-- Datepicker code starts here -->
+	<link rel="stylesheet" href="/templates/rhuk_milkyway/js/datepicker/development-bundle/themes/base/jquery.ui.all.css">
+	<script src="/templates/rhuk_milkyway/js/datepicker/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="/templates/rhuk_milkyway/js/datepicker/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="/templates/rhuk_milkyway/js/datepicker/development-bundle/ui/jquery.ui.datepicker.js"></script>
+	<!-- Datepicker code ends here -->
+
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/noconflict.js"></script>
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/paginate.js"></script>
+	<script type="text/javascript" language="javascript" src="/templates/rhuk_milkyway/js/tooltip.js"></script>
+	<script type="text/javascript" src="/templates/rhuk_milkyway/js/slider/jquery-ui.js"></script>
+	<link href="/templates/rhuk_milkyway/js/slider/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+	<link href="/templates/rhuk_milkyway/css/demo.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/rhuk_milkyway/css/mybootstrapcss.css" rel="stylesheet" type="text/css" />
+
+	<!-- Javascript  JQuery code for menus starts-->
+	<link type="text/css" href="/templates/rhuk_milkyway/menus/menu.css" rel="stylesheet" />
+	<!-- Javascript  JQuery code for menus ends-->
+
+	<!--for pagination and table sort -->
+	<!--[if lt IE 7]>
+	<style type="text/css" media="screen">
+
+	body { behavior:url("/templates/rhuk_milkyway/csshover.htc"); }
+	</style>
+
+
+	<![endif]-->
+	
+	<script src="/templates/rhuk_milkyway/js/myjsfunctions.js"></script>
+	
+	<!--[if IE]>
+	<style type="text/css">
+
+	ul.fdtablePaginater { display: inline-block; }
+	ul.fdtablePaginater { display: inline; }
+	ul.fdtablePaginater li { float: left; }
+	ul.fdtablePaginater { text-align: center; }
+	</style>
+	<![endif]-->
+
+	<script type="text/javascript">
+	//<![CDATA[
+
+	$j = jQuery.noConflict();
+	$j.widget("ui.tooltip", $j.ui.tooltip, {
+		options: {
+			content: function () {
+				return $j(this).prop('title');
+			}
+		}
+	});
+
+	$j(document).ready(function(){
+		$j( '.suspension' ).tooltip({
+			track: true,
+			tooltipClass: 'warning'
+		});
+	});
+
+	var callbackTest=
+	{
+		calculateTotalRating:function(opts)
+		{
+			var trs=document.getElementById("theTable").getElementsByTagName("tbody")[0].rows,
+			tot=0,
+			cnt=0,
+			cell=document.getElementById("visibleTotal");
+
+			for(var i=0,tr;tr=trs[i];i++)
+			{
+				// If the row is visible i.e. has not display:none or the className "invisibleRow" (used by the fake filter)
+				if(tr.style.display!="none" && tr.className.search(/(^|\s)invisibleRow($|\s)/)==-1)
+				{
+					tot+=Number(fdTableSort.getInnerText(tr.cells[6]));
+					cnt++;
+				};
+			};
+
+			while(cell.firstChild) { cell.removeChild(cell.firstChild); };
+
+			cell.appendChild(document.createTextNode(Number(tot / cnt).toFixed(2)));
+		},
+		displayTextInfo:function(opts)
+		{
+			if(!("currentPage" in opts)) { return; }
+
+			var p=document.createElement('p'),
+			t=document.getElementById('theTable-fdtablePaginaterWrapTop'),
+			b=document.getElementById('theTable-fdtablePaginaterWrapBottom');
+
+			p.className="paginationText";
+			p.appendChild(document.createTextNode("Showing page"+opts.currentPage+" of "+Math.ceil(opts.totalRows/opts.rowsPerPage)));
+
+			t.insertBefore(p.cloneNode(true),t.firstChild);
+			b.appendChild(p);
+		}
+	};
+	//]]>
+	</script>
+
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/templates/rhuk_milkyway/css/slider.css" />
+
+	<style type="text/css" media="screen">
+	#tooltip
+	{
+		position: absolute;
+		top: 0px;
+		left: -999px;
+		width: 100px;
+		height: 25px;
+		line-height: 25px;
+		background: transparent url(/templates/rhuk_milkyway/images/tooltip-dongle.png) no-repeat 50% 100%;
+		padding-bottom: 5px;
+		z-index: 9999;
+		display: none !important;
+	}
+	#tooltipInner1
+	{
+		padding-left: 5px;
+		overflow: hidden;
+		color: #fff;
+		background: transparent url(/templates/rhuk_milkyway/images/tooltipleft.png) no-repeat 0 0;
+		display: none !important;
+	}
+	#tooltipInner2
+	{
+		padding: 0 5px 0 0;
+		height: 22px;
+		line-height: 22px;
+		overflow: hidden;
+		color: #fff;
+		text-align: center;
+		background: transparent url(/templates/rhuk_milkyway/images/tooltip.png) no-repeat 100% 0;
+		text-shadow: #000 1px 1px 1px;
+		display: none !important;
+	}
+	</style>
+
+	<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="/../ie.css" />
+	<style type="text/css">
+	/* Basic styles for non png aware Internet Explorer 6 */
+	#tooltip
+	{
+		background-image: url(/templates/rhuk_milkyway/images/tooltip-dongle.gif);
+		display: none !important;
+	}
+	#tooltipInner1
+	{
+		background-image: none;
+		padding: 0;
+		display: none;
+	}
+	#tooltipInner2
+	{
+		background-image: none;
+		background: #000;
+		padding: 0;
+		display: none;
+	}
+	</style>
+	<![endif]-->
+
+	<script type="text/javascript" src="/templates/rhuk_milkyway/slider.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	var imgList=["slider-disabled.png","slider-disabled-1.png","slider.png","slider-1.png"];
+	var preloadImg=[]
+	for(var i=0,imgSrc;imgSrc=imgList[i];i++)
+	{
+		preloadImg[i]=new Image();
+		preloadImg[i].src="/templates/rhuk_milkyway/images/"+imgSrc;
+	};
+
+	var TT=
+	{
+		tooltip: null,
+		tooltipInner: null,
+		handle: null,
+		timer: null,
+		init: function(cbObj)
+		{
+			// Grab a reference to the slider handle
+			var handle=document.getElementById("fd-slider-handle-"+cbObj.elem.id);
+
+			// If something has gone wrong then bail out.
+			if(!handle) { return; };
+
+			// Create the tooltip if needs be.
+			if(!document.getElementById('tooltip'))
+			{
+				var tt=document.createElement("div");
+				tt.id="tooltip";
+
+				var TTinner1=document.createElement("div");
+				TTinner1.id="tooltipInner1";
+
+				var TTinner2=document.createElement("div");
+				TTinner2.id="tooltipInner2";
+
+				TTinner1.appendChild(TTinner2);
+				tt.appendChild(TTinner1);
+
+				document.getElementsByTagName('body')[0].appendChild(tt);
+
+				// Cache a reference to the tooltip and tooltip inner
+				TT.tooltip=tt;
+				TT.tooltipInner=TTinner2;
+			};
+
+			// Show the tooltip when the slider is focused
+			fdSliderController.addEvent(handle,"focus",TT.show);
+			// Show the tooltip on mouseover
+			fdSliderController.addEvent(handle,"mouseover",TT.show);
+
+			// Hide the tooltip when the slider is blurred
+			fdSliderController.addEvent(handle,"blur",TT.hide);
+			// Hide the tooltip on mouseout using a slight delay
+			fdSliderController.addEvent(handle,"mouseout",
+				function()
+				{
+					var elem=document.getElementById("fd-slider-"+this.id.replace(/fd-slider-handle-|fd-slider-/,""));
+					if(elem.className.search("focused")!=-1) { return; };
+					TT.timer=setTimeout(TT.hide, 1000);
+				});
+
+			TT.tooltip.style.display="block";
+			TT.tooltip.style.visibility="hidden";
+			TT.update(cbObj);
+			TT.tooltip.style.display="none";
+			TT.tooltip.style.visibility="hidden";
+		},
+		// A function that positions the tooltip and updates it's value
+		// This is also used as the callback function for the slider
+		update:function(cbObj)
+		{
+			clearTimeout(TT.timer);
+
+			var curleft=0,
+			curtop=0,
+			obj=document.getElementById("fd-slider-handle-"+cbObj.elem.id),
+			osw=obj.offsetWidth;
+
+			// Try catch for IE's benefit
+			try
+			{
+				while(obj.offsetParent)
+				{
+					curleft+=obj.offsetLeft;
+					curtop+=obj.offsetTop;
+					obj=obj.offsetParent;
+				};
+			}
+			catch(err) { };
+
+			TT.tooltip.style.left=Math.round((curleft-((TT.tooltip.offsetWidth-osw)/2)))+"px";
+			TT.tooltip.style.top=(curtop-30)+"px";
+
+			while(TT.tooltipInner.firstChild) { TT.tooltipInner.removeChild(TT.tooltipInner.firstChild); };
+
+			var txt=cbObj.elem.tagName.toLowerCase()=="select" ? cbObj.elem.options[cbObj.elem.selectedIndex].text : cbObj.elem.value;
+			TT.tooltipInner.appendChild(document.createTextNode(txt));
+		},
+		show:function(e)
+		{
+			clearTimeout(TT.timer);
+			e=e || window.event;
+			if(e && e.type && (e.type!="focus" && e.type!="mouseover")) return;
+
+			TT.tooltip.style.display="block";
+			TT.tooltip.style.visibility="visible";
+			TT.update({"elem":document.getElementById(this.id.replace(/fd-slider-handle-|fd-slider-/,""))});
+		},
+		hide:function(e)
+		{
+			e=e || window.event;
+			if(e && e.type && (e.type!="blur" && e.type!="mouseout")) return;
+			TT.tooltip.style.display="none";
+			TT.tooltip.style.visibility="hidden";
+		}
+	};
+	</script>
+</head>
+
+
+
+<style type="text/css">
+#menu li .drop
+{
+	background: url("/templates/rhuk_milkyway/menus/img/menu_divider.png") no-repeat right 0px;
+}
+</style>
+
+
+<body >
+<div class="evaluationwrapper">
+<div class="evaluationpage_center">
+	<div >
+	
+	<div class="pageheaderdivclass">
+		<table border="0" width="100%" cellpadding="5" cellspacing="0" >
+			<tr valign="center">
+				
+				<td class="uitop_col">
+					<span style="font-size: 150%; font-weight: bold;"><span style="font-family: arial; color: orange;">on</span><span style="font-family: arial; color: #2485DB;">Edu</span></span>
+					 @ Faculty of Science and Technology				</td>
+
+				<td class="uitop_menu" align="right">
+										
+<script>
+
+    function getEvents(obj,caleventscount) {
+
+        location.href = "https://iutripura.winnou.net/index.php?option=com_base_calendar&source=tile&view=icon&Itemid=357";
+    }
+
+</script>
+<style type="text/css">
+.vline { background-color: #404040; width: 2px; height: 20px; vertical-align: middle; }
+.menu_name { color:#404040 !important; font-weight: bold; }
+</style>
+<table border="0" cellspacing="2">
+    <tr>
+                <td style="padding: 0px !important">
+
+                        <a href="https://play.google.com/store/apps/details?id=com.onedu.app" target="_blanck" >
+            <img src="https://iutripura.winnou.net/templates/rhuk_milkyway/images/playstore.png" style="width: 105px;margin-right: 10px;"/>
+            </a>
+                                      <a target="_blanck"  href="https://itunes.apple.com/in/app/onedu-mycampus/id1131570992?mt=8"  style="text-decoration: underline;" >
+              <img src="https://iutripura.winnou.net/templates/rhuk_milkyway/images/appstore.png" style="width: 105px;margin-right: 10px;"/>
+              </a>
+            
+        </td>
+                <td><a href="/index.php"><span class="menu_name">Home</span></a></td>
+                <td><div class="vline"></div></td>
+         <td>
+
+            <!--<a href="https://iutripura.winnou.net/index.php?option=com_base_calendar&source=tile&view=icon&Itemid=357" style="padding: 0px;"> -->
+            <a href="https://iutripura.winnou.net/index.php?option=com_base_calendar&source=tile&view=icon&Itemid=357" style="padding: 0px;">
+                <span class="menu_name">Calendar</span>
+                            </a>
+
+        <!--<div style="margin-top: 5px;padding: 0px;cursor: pointer;" onclick="getEvents(this,'0')";>
+            <div style="background: #337da5;border-top-left-radius:7px;border-top-right-radius:7px;border: 1px solid #bebebe;text-align: center;font-size: 0.8em;width: 30px;height: 10px;color: #fff;border-bottom: 0px;">
+                Aug            </div>
+            <div style="background: #ffffff;border-bottom-left-radius:7px;border-bottom-right-radius:7px;border: 1px solid #bebebe;text-align: center;font-size: 1em;width: 30px;height: 14px;">
+                15            </div>
+
+        </div>-->
+
+        </td>
+        <td><div class="vline"></div></td>
+        <td><a href="https://iutripura.winnou.net/index.php?option=com_base_change_accountinfo&Itemid=326" ><span class="menu_name">My Profile</span></a></td>
+                <td><div class="vline"></div></td>
+        <td><a href="https://iutripura.winnou.net/index.php?option=com_user&task=logout&return="><span class="menu_name">Log Out</span></a></td>
+    </tr>
+</table>
+
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="clr"></div>
+	</div>
+		
+<script type="text/javascript">
+function counter(myid, menuid)
+{
+    var ajaxRequest;
+    try { ajaxRequest = new XMLHttpRequest(); }
+    catch(e)
+    {
+        try { ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); }
+        catch (e)
+        {
+            try { ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); }
+            catch (e) { alert("Error from the browser."); return false; }
+        }
+    }
+    
+    var url="https://iutripura.winnou.net/modules/mod_menus/ajax.php?myid="+myid+"&menuid="+menuid;
+    ajaxRequest.open("GET", url, true);
+    ajaxRequest.send();
+}
+</script>
+<script type="text/javascript">
+function menu_hold(ele)
+{
+    var leftOffset=parseInt($(window).width()-$(ele).offset().left);
+    var menuBox=parseInt($(ele).children("div").width());
+    var activeLeft=parseInt(menuBox-$(ele).width()-7);
+    
+    if(leftOffset<menuBox) { $(ele).children("div").css("left",-activeLeft); }
+    else { $(ele).children("div").css("left","-1px"); }
+}
+
+function menu_out(ele)
+{
+    $(ele).children("div").css("left","-999em"); 
+}
+</script>
+<div style="display: inline-block; width: 100%; background: #474747; padding: 0px 0px 5px 0px;">
+<ul id="menu" style="margin-top: 0px; vertical-align: middle;">
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Admissions </span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Admissions</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_newadmissionform&task=viewadmission&editstu=1&Itemid=460' onclick="return counter('20623', '460');">
+                <span>Admission Details</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Accounts</span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Fee Payments</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_feepay&Itemid=333' onclick="return counter('20623', '333');">
+                <span>Fee Payments</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_feepayview&Itemid=60' onclick="return counter('20623', '60');">
+                <span>Fee Payments View</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Academics</span></a>
+        <div class="dropdown_2columns">
+                <div class="col_1">
+        <h3>Acad View</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_timetablenew&Itemid=78' onclick="return counter('20623', '78');">
+                <span>View Time Table</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_classmaterial&Itemid=336' onclick="return counter('20623', '336');">
+                <span>View Shared Content</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_eventsregister&Itemid=431' onclick="return counter('20623', '431');">
+                <span>Register Events</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_stu_courseregistration&Itemid=453' onclick="return counter('20623', '453');">
+                <span>Course Registration</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                <div class="col_1">
+        <h3>Reports</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_attendancereport&Itemid=98' onclick="return counter('20623', '98');">
+                <span>Attendance Detail</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Communication</span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Alerts</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_circulars&clear_session=1&Itemid=318' onclick="return counter('20623', '318');">
+                <span>View Circulars</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Exam</span></a>
+        <div class="dropdown_2columns">
+                <div class="col_1">
+        <h3>Reports</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_sessionalresultreport&task=stuinfo&backvalue=3&Itemid=243' onclick="return counter('20623', '243');">
+                <span>Sessional Marks</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_finaltestresults&task=individualstudentview&Itemid=262' onclick="return counter('20623', '262');">
+                <span>Final Marks</span>
+                </a>
+            </li>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_oq_performancereport&task=individual&Itemid=351' onclick="return counter('20623', '351');">
+                <span>Performance Report</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                <div class="col_1">
+        <h3>Online Exam</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_oq_onlineexam&Itemid=258' onclick="return counter('20623', '258');">
+                <span>Online Exam</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Library</span></a>
+        <div class="dropdown_2columns">
+                <div class="col_1">
+        <h3>Transactions</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_library_transactions&Itemid=264' onclick="return counter('20623', '264');">
+                <span>Library Transactions</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                <div class="col_1">
+        <h3>Reports</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_library_bookenquiry&Itemid=205' onclick="return counter('20623', '205');">
+                <span>OPAC</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Feedback</span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Student Feedback</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_faculty_feedback&Itemid=252' onclick="return counter('20623', '252');">
+                <span>Scheduled Feedback</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Placements</span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Reports</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_studentprofile_status&Itemid=356' onclick="return counter('20623', '356');">
+                <span>Student Resume</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li onmouseover="menu_hold(this)" onmouseout="menu_out(this)">
+        <a href="#" class="drop"><span>Corporate Relations</span></a>
+        <div class="dropdown_1column">
+                <div class="col_1">
+        <h3>Alumni</h3>
+        <ul>
+                    <li>
+                <a href='https://iutripura.winnou.net/index.php?option=com_base_alumini_register&Itemid=307' onclick="return counter('20623', '307');">
+                <span>Alumni Register</span>
+                </a>
+            </li>
+                </ul>
+        </div>
+                </div>
+    </li>
+    <li class="menu_right" style="color: #CCC;">Welcome, ANURAG ROY</li>
+</ul>
+</div>
+		<div class="maincontent">
+				<div class="evaluationcontent-middle">
+			<span style='font-size:13px !important'><b>You are here:</b> Accounts <img width="11" height="11" border="0" style="vertical-align:middle;" src="https://iutripura.winnou.net/templates/rhuk_milkyway/images/mw_forwardreadon.png"> Fee Payments View</span><br /><br />					<link rel="stylesheet" type="text/css" media="all" href="/includes/js/calendar/calendar-mos.css" title="green" />
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:10000;"></div>
+		<!-- import the calendar script -->
+	<script language="javascript" type="text/javascript" src="https://iutripura.winnou.net/includes/js/calendar/calendar_mini.js"></script>
+	<script language="javascript" type="text/javascript" src="https://iutripura.winnou.net/includes/js/calendar/lang/calendar-en-GB.js"></script>
+	<script language="javascript" type="text/javascript" src="https://iutripura.winnou.net/includes/js/overlib_mini.js"></script>
+	<script language="javascript">
+	function redirection()
+	{
+		self.location = 'index.php?option=com_base_feepayview&schoolid=1&rollnumber=&studentname=&batchyear=19&Itemid=60';
+	}
+	function lightboxdisplay()
+	{
+		var browserCheck = (document.all) ? 1 : 0;
+		if( browserCheck > 0 )/* for IE no fade effect because not working */
+                {
+                        $("#requiresjcrop").fadeIn(600);
+                        document.getElementById('fade').style.display='inline-block';
+                }
+                if( browserCheck <= 0 )
+                {
+
+                        $("#requiresjcrop,#fade").fadeIn(600);
+                }
+		//document.getElementById('feedisplay').style.display="block";
+
+	}
+	function lightboxclose()
+	{
+		var browserCheck = (document.all) ? 1 : 0;
+		if( browserCheck > 0 )/* for IE no fade effect because not working */
+                {
+                        $("#requiresjcrop").fadeOut(600);
+                        document.getElementById('fade').style.display='none';
+                }
+                if( browserCheck <= 0 )
+                {
+
+                        $("#requiresjcrop,#fade").fadeOut(600);
+                }
+		//document.getElementById('feedisplay').style.display="block";
+
+	}
+	function printfunction()
+	{
+		javascript:void window.open('https://iutripura.winnou.net/components/com_base_feepayview/fpdfprint.php?userid=20623'+'&schoolid=1'+'&Itemid=60');
+	}
+	</script>
+	<style>
+	#rnd_container {background: #fff; margin:1px;}
+
+	.rnd_top, .rnd_bottom {display:block; background:transparent; font-size:1px;}
+	.rnd_b1, .rnd_b2, .rnd_b3, .rnd_b4 {display:block; overflow:hidden;}
+	.rnd_b1, .rnd_b2, .rnd_b3 {height:1px;}
+	.rnd_b2, .rnd_b3, .rnd_b4 {background:transparent; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+	.rnd_b1 {margin:0 5px; background:#ccc;}
+	.rnd_b2 {margin:0 3px; border-width:0 2px;}
+	.rnd_b3 {margin:0 2px;}
+	.rnd_b4 {height:2px; margin:0 1px;}
+
+	.rnd_content {
+	display:block;
+	border:0 solid #ccc;
+	border-width:0 1px;
+	padding: 4px;
+
+	}
+	#fade
+        {
+		display:none;
+		background:#000000;
+		_background:none;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+		filter:alpha(opacity=30);
+		opacity:0.3;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		z-index:1003;
+        }
+        #requiresjcrop
+        {
+               display:none;
+               position:fixed;
+               top:50px;
+               left:40%;
+               margin-left:-200px;
+               width:600px;
+               height: 400px;
+               padding:10px 15px 10px 15px;
+               -webkit-border-radius: 10px;
+               -moz-border-radius: 10px;
+               border-radius: 10px;
+               border:3px solid #4A7ABC;
+               background-color:#FFFFFF;
+               z-index:1005;
+        }
+
+</style>
+
+
+<div class="componentheading" align="center" style="width:100%;margin:0 auto;"><h3>Fee payment details of ANURAG ROY (2020-2021 )</h3></div>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5" class="inner_table1">
+        <tr>
+           <th width="150" rowspan="6">
+				<img src="https://iutripura.winnou.net/templates/rhuk_milkyway/images/user.png" height="100" width="100">
+				</th>
+          <th width="150" valign="middle"> <div align="right">Name : </div></th>
+                    <td valign="middle"><div align="left">ANURAG ROY</div></td>
+	            <td width="5%" rowspan="4" valign="middle">&nbsp;</td>
+          <th width="200" valign="middle"> <div align="right">Father's Name : </div></th>
+          <td>SHYAMAL ROY</td>
+        </tr>
+        <tr>
+
+            <th align="right" valign="middle">Roll No. :</th>
+
+					<td valign="middle">20IUT0010027</td>
+						<!--<td class="sectiontableentry1" align="center">20IUT0010027 </td>  -->
+											<!--<td valign="middle">20IUT0010027</td> -->
+
+			<th id="textright" align="right" valign="middle">Address :</td>
+          <td id="textleft" rowspan="4" valign="top" style="line-height: 20px;">SUKANTA PALLI, MANU BAZAR,<br />SABROOM, SOUTH TRIPURA,<br />Tripura,INDIA - 799143</td>
+        </tr>
+		<tr valign="middle">
+			<th align="right">Section :</th>
+            <td>CSE 4th Year Sem 1</td>
+        </tr>
+		<tr style="line-height: 5px;">
+			<td colspan="5">&nbsp;</td>
+		</tr>
+      </table>
+<br />
+	<div align="right" style="width:100%;margin:0 auto;">
+				<a href="javascript:printfunction()"><input type="button" value="Bonafide Print" class="button"></a>
+			<a href="javascript:lightboxdisplay()"><input type="button" value="Details" class="button"></a>
+	</div>
+<div id="fade"></div>
+<div id="requiresjcrop">
+<div align="right"><img onclick="lightboxclose()" src="https://iutripura.winnou.net/templates/rhuk_milkyway/images/close.png" style="margin-top:-7px !important;margin-right:-14px;" /></div>
+	<div style="overflow:auto;width:600px;height: 385px;">
+				<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+				<tr><td width="100%">				<h3 style="">Admission Fee</h3></td></tr>
+				</table>
+        				<table width="100%" cellspacing="0" cellpadding="5" align="center" class="viewtable">
+        <tr height="20px;">
+                <th class="sortable" width="100"> Paid Date</th>
+                <th class="sortable" width="100"> Receipt No.</th>
+                <th class="sortable"align="right" width="150"> Amount</th>
+                <th class="sortable"> Payment&nbsp;Type</th>
+				                <th class="sortable">Option</th>
+				
+        </tr>
+        <tr>
+            				<td style="text-align:center;"  width="20%">31-08-2020</td>
+				<td style="text-align:center;">IUT/20-21/001839</td>
+				<td style="text-align:center;">Rs. 20000</td>
+				<td style="text-align:center;" width="40%">
+				Online Payment				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D1839%26userid%3D20623%26schoolid%3D1%26paymenttype%3D3%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2020-08-31%26categoryid%3D3%26headerid%3D28775%26dddate%3D0000-00-00%26date%3D2020-08-31%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+			
+</table>
+                <br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr height="30px;">
+<th width="10%">Total :</th>
+<td width="10%"  style="text-align:right;">Rs. 20000 </td>
+<td style="text-align:left;padding-left:50px;">&nbsp;</td>
+</tr>
+</table>
+
+ 				<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+				<tr><td width="100%"><br/>				<h3 style="">Caution Deposit</h3></td></tr>
+				</table>
+        				<table width="100%" cellspacing="0" cellpadding="5" align="center" class="viewtable">
+        <tr height="20px;">
+                <th class="sortable" width="100"> Paid Date</th>
+                <th class="sortable" width="100"> Receipt No.</th>
+                <th class="sortable"align="right" width="150"> Amount</th>
+                <th class="sortable"> Payment&nbsp;Type</th>
+				                <th class="sortable">Option</th>
+				
+        </tr>
+        <tr>
+            				<td style="text-align:center;"  width="20%">30-09-2020</td>
+				<td style="text-align:center;">IUT/20-21/004761</td>
+				<td style="text-align:center;">Rs. 10000</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D4761%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2020-09-30%26categoryid%3D3%26headerid%3D31814%26dddate%3D0000-00-00%26date%3D2020-09-30%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+			
+</table>
+                <br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr height="30px;">
+<th width="10%">Total :</th>
+<td width="10%"  style="text-align:right;">Rs. 10000 </td>
+<td style="text-align:left;padding-left:50px;">&nbsp;</td>
+</tr>
+</table>
+
+ 				<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+				<tr><td width="100%"><br/>				<h3 style="">Late Fine</h3></td></tr>
+				</table>
+        				<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center"><tr><td width="100%"><div class="infomessage">No payments received till date.</div></td></tr></table>
+								<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+				<tr><td width="100%"><br/>				<h3 style="">Program Fee</h3></td></tr>
+				</table>
+        				<table width="100%" cellspacing="0" cellpadding="5" align="center" class="viewtable">
+        <tr height="20px;">
+                <th class="sortable" width="100"> Paid Date</th>
+                <th class="sortable" width="100"> Receipt No.</th>
+                <th class="sortable"align="right" width="150"> Amount</th>
+                <th class="sortable"> Payment&nbsp;Type</th>
+				                <th class="sortable">Option</th>
+				
+        </tr>
+        <tr>
+            				<td style="text-align:center;"  width="20%">30-09-2020</td>
+				<td style="text-align:center;">IUT/20-21/004761</td>
+				<td style="text-align:center;">Rs. 50000</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D4761%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2020-09-30%26categoryid%3D3%26headerid%3D31814%26dddate%3D0000-00-00%26date%3D2020-09-30%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">19-02-2021</td>
+				<td style="text-align:center;">IUT/20-21/009318</td>
+				<td style="text-align:center;">Rs. 10000</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D9318%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2021-02-19%26categoryid%3D3%26headerid%3D36917%26dddate%3D0000-00-00%26date%3D2021-02-19%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">04-10-2021</td>
+				<td style="text-align:center;">IUT/21-22/006468</td>
+				<td style="text-align:center;">Rs. 37500</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D6468%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2021-10-04%26categoryid%3D3%26headerid%3D46918%26dddate%3D0000-00-00%26date%3D2021-10-04%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">22-02-2022</td>
+				<td style="text-align:center;">IUT/21-22/012694</td>
+				<td style="text-align:center;">Rs. 25000</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D12694%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2022-02-22%26categoryid%3D3%26headerid%3D54192%26dddate%3D0000-00-00%26date%3D2022-02-22%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">22-02-2022</td>
+				<td style="text-align:center;">IUT/21-22/012863</td>
+				<td style="text-align:center;">Rs. 12500</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D12863%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2022-02-22%26categoryid%3D3%26headerid%3D54362%26dddate%3D0000-00-00%26date%3D2022-02-22%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">20-08-2022</td>
+				<td style="text-align:center;">IUT/22-23/006794</td>
+				<td style="text-align:center;">Rs. 37500</td>
+				<td style="text-align:center;" width="40%">
+				Online Payment				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D6794%26userid%3D20623%26schoolid%3D1%26paymenttype%3D3%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2022-08-20%26categoryid%3D3%26headerid%3D65922%26dddate%3D0000-00-00%26date%3D2022-08-20%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">05-01-2023</td>
+				<td style="text-align:center;">IUT/22-23/013862</td>
+				<td style="text-align:center;">Rs. 25000</td>
+				<td style="text-align:center;" width="40%">
+				Online Payment				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D13862%26userid%3D20623%26schoolid%3D1%26paymenttype%3D3%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2023-01-05%26categoryid%3D3%26headerid%3D73889%26dddate%3D0000-00-00%26date%3D2023-01-05%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+							<td style="text-align:center;"  width="20%">04-08-2023</td>
+				<td style="text-align:center;">IUT/23-24/006356</td>
+				<td style="text-align:center;">Rs. 50000</td>
+				<td style="text-align:center;" width="40%">
+				Online Payment				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D6356%26userid%3D20623%26schoolid%3D1%26paymenttype%3D3%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2023-08-04%26categoryid%3D3%26headerid%3D86315%26dddate%3D0000-00-00%26date%3D2023-08-04%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+			
+</table>
+                <br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr height="30px;">
+<th width="10%">Total :</th>
+<td width="10%"  style="text-align:right;">Rs. 247500 </td>
+<td style="text-align:left;padding-left:50px;">&nbsp;</td>
+</tr>
+</table>
+
+ 				<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+				<tr><td width="100%"><br/>				<h3 style="">Transportation Fee</h3></td></tr>
+				</table>
+        				<table width="100%" cellspacing="0" cellpadding="5" align="center" class="viewtable">
+        <tr height="20px;">
+                <th class="sortable" width="100"> Paid Date</th>
+                <th class="sortable" width="100"> Receipt No.</th>
+                <th class="sortable"align="right" width="150"> Amount</th>
+                <th class="sortable"> Payment&nbsp;Type</th>
+				                <th class="sortable">Option</th>
+				
+        </tr>
+        <tr>
+            				<td style="text-align:center;"  width="20%">15-12-2020</td>
+				<td style="text-align:center;">IUT/20-21/006436</td>
+				<td style="text-align:center;">Rs. 7000</td>
+				<td style="text-align:center;" width="40%">
+				Credit/Debit Card				</td>
+												<td>
+										<a href="javascript:void window.open('https%3A%2F%2Fiutripura.winnou.net%2Fcomponents%2Fcom_base_feepayview%2Fprint.php%3F%26receiptno%3D6436%26userid%3D20623%26schoolid%3D1%26paymenttype%3D6%26ddno%3D%26ccdcno%3D%26depositedaccno%3D%26bankname%3D%26headerdate%3D2020-12-15%26categoryid%3D3%26headerid%3D33728%26dddate%3D0000-00-00%26date%3D2020-12-15%26name%3DANURAG+ROY%26fathername%3DSHYAMAL+ROY%26branch%3DCSE%2B4th%2BYear%2BSem%2B1%26degree%3DB.%2BTech%26dname%3DComputer%2BScience%2B%2526%2BEngineering%26batchid%3D12090%26rollno%3D20IUT0010027%26refund%3D0%26pop%3D1%26amp%3Bno_menu%3D1%26print%3D1', 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=yes,resizable=yes,width=640,height=480,directories=no,location=no');">
+						<input type="button" value="Print" class="button" />
+					</a>
+									</td>
+							</tr>
+			
+</table>
+                <br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr height="30px;">
+<th width="10%">Total :</th>
+<td width="10%"  style="text-align:right;">Rs. 7000 </td>
+<td style="text-align:left;padding-left:50px;">&nbsp;</td>
+</tr>
+</table>
+
+ 	</div>
+	</div>
+	<br />
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+	
+        </tr>
+</table>
+            <style>
+#rnd_container {background: #fff; margin:1px;}
+
+    .rnd_top, .rnd_bottom {display:block; background:transparent; font-size:1px;}
+    .rnd_b1, .rnd_b2, .rnd_b3, .rnd_b4 {display:block; overflow:hidden;}
+    .rnd_b1, .rnd_b2, .rnd_b3 {height:1px;}
+    .rnd_b2, .rnd_b3, .rnd_b4 {background:transparent; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+    .rnd_b1 {margin:0 5px; background:#ccc;}
+    .rnd_b2 {margin:0 3px; border-width:0 2px;}
+    .rnd_b3 {margin:0 2px;}
+    .rnd_b4 {height:2px; margin:0 1px;}
+
+    .rnd_content {
+    display:block;
+    border:0 solid #ccc;
+    border-width:0 1px;
+    padding: 4px;
+
+    }
+</style>
+<table width="100%" class="viewtable" cellspacing="0" cellpadding="5">
+
+        <tr height="50px;">
+		<th class="sortable"><b>Fee Types</b></th>
+                                 <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;1</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;2</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;3</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;4</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;5</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;6</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;7</b></th>
+                                <th class="sortable" align="center" colspan="3" style="color:green"><b>Installment&nbsp;8</b></th>
+                        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+          
+                <th style="text-align:center;">Fee Amount</th>
+                <th style="text-align:center;">Due Amount</th>
+                <th style="text-align:center;">Due Date</th>
+
+                  </tr>
+        				<tr>
+					<td style="padding-left:10px;"><b>Admission Fee</b></td>
+										<td style="text-align:center;" valign="middle">
+						   Rs. 20000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						01-04-2020					</td>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>			 </tr>
+		 				<tr>
+					<td style="padding-left:10px;"><b>Caution Deposit</b></td>
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 10000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						03-08-2020					</td>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>			 </tr>
+		 				<tr>
+					<td style="padding-left:10px;"><b>Late Fine</b></td>
+					
+					
+										<td style="text-align:center;" valign="middle">
+						   -						</td>
+										<td  style="text-align:center;" valign="middle">
+					-					</td>
+					<td style="text-align:center;" valign="middle">
+						-					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   -						</td>
+										<td  style="text-align:center;" valign="middle">
+					-					</td>
+					<td style="text-align:center;" valign="middle">
+						-					</td>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+									<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>			 </tr>
+		 				<tr>
+					<td style="padding-left:10px;"><b>Program Fee</b></td>
+					
+					
+					
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						03-08-2020					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						03-03-2021					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						02-08-2021					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						03-01-2022					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						01-08-2022					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Rs. 7500					</td>
+					<td style="text-align:center;" valign="middle">
+						02-01-2023					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Rs. 50000					</td>
+					<td style="text-align:center;" valign="middle">
+						01-08-2023					</td>
+
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 50000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Rs. 50000					</td>
+					<td style="text-align:center;" valign="middle">
+						02-01-2024					</td>
+
+					
+					
+								 </tr>
+		 				<tr>
+					<td style="padding-left:10px;"><b>Transportation Fee</b></td>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+										<td style="text-align:center;" valign="middle">
+						   Rs. 7000						</td>
+										<td  style="text-align:center;" valign="middle">
+					Paid					</td>
+					<td style="text-align:center;" valign="middle">
+						11-12-2020					</td>
+
+					
+									<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>				<td style="text-align:center">7000</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">02-08-2021</td>				<td style="text-align:center">7000</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">03-01-2022</td>				<td style="text-align:center">7000</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">01-08-2022</td>				<td style="text-align:center">7990</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">02-01-2023</td>				<td style="text-align:center">8100</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">23-12-2023</td>	
+				<td style="text-align:center">8100</td>
+				<td style="text-align:center">Paid</td>
+				<td style="text-align:center">23-12-2023</td>	
+							
+				<!-- <td style="text-align:center">-</td>
+				<td style="text-align:center">-</td>
+				<td style="text-align:center">-</td> -->
+						 </tr>
+		         <tr>
+                <td style="padding-left:10px;border-top:solid 1px;"><b>Total Due</b></td>
+                				<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">-</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+			       				<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">-</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+			       				<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">-</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+			       				<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">-</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+			       				<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">Rs. -75000</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+								<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">Rs. 7500</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+								<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">Rs. 50000</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+								<td style="text-align:center;border-top:solid 1px;"  valign="middle">&nbsp;</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">Rs. 50000</td>
+				<td style="text-align:center;border-top:solid 1px;"" valign="middle">&nbsp;</td>
+				        <tr>
+
+</table>
+<br /><br />		<div><b><span style="color:red;">* </span>Awarded Rs. 20000 on 01-08-2020 as Scholarship.</b></div>
+			<div><b><span style="color:red;">* </span>Awarded Rs. 20000 on 01-01-2021 as Scholarship.</b></div>
+			<div><b><span style="color:red;">* </span>Awarded Rs. 12500 on 01-08-2021 as Scholarship.</b></div>
+			<div><b><span style="color:red;">* </span>Awarded Rs. 12500 on 01-01-2022 as Scholarship.</b></div>
+			<div><b><span style="color:red;">* </span>Awarded Rs. 12500 on 01-08-2022 as Scholarship.</b></div>
+			<div><b><span style="color:red;">* </span>Awarded Rs. 25000 on 01-01-2023 as Scholarship.</b></div>
+	
+						</div>
+				<div style="background-color: #474747; line-height: 35px; font-size: 15px; text-align: center; color: #CCC;">
+			Supported by <a href="http://www.winnou.com" target="_blank"><span style="color: #EE7600;">winnou.com</span></a>
+		</div>
+			</div>
+	<div class="evaluationpage_bottom"></div>
+</div>
+
+</body>
+</html>
